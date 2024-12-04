@@ -1,0 +1,48 @@
+.numbers-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.number-button {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.number-button:hover {
+  transform: scale(1.1);
+}
+
+button.selected {
+  background-color: #e0e0e0; /* Цвет при выборе кнопки */
+}
+
+button.green {
+  background-color: green !important;
+  color: white;
+  font-weight: bold;
+}
+
+button.red {
+  background-color: red !important;
+  color: white;
+  font-weight: bold;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-card {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

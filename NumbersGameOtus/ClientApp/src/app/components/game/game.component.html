@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Угадай правильное число</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="numbers-container">
+      <!-- Генерация кнопок для чисел -->
+      <button
+        *ngFor="let number of numbers"
+        mat-raised-button
+        [ngClass]="colors[number]"
+        (click)="onNumberClick(number)"
+        class="number-button">
+        {{ number }}
+      </button>
+    </div>
+
+    <!-- Сообщение о результате -->
+    <div *ngIf="message" class="message">
+      <mat-card class="message-card">
+        <mat-card-content>{{ message }}</mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card-content>
+</mat-card>
